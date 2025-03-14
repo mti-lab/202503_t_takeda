@@ -2,9 +2,11 @@
 
 ## 環境構築
 ライブラリをimportする
-```pip install -r requirements.txt```
+```
+pip install -r requirements.txt
+```
 
-.envファイルを作成、OPENAI_API_KEYを記入する
+.envファイルを作成し、OPENAI_API_KEYを記入する
 
 ## データのダウンロード
 実験に使用する際のデータセットを以下のサイトからそれぞれダウンロードし、データディレクトリの.gitkeepがある箇所にダウンロードする
@@ -14,16 +16,24 @@
 ## 実験順序
 
 データベースの画像のキャプションを作成する
-```make_caption_from_blip2.py```
+```
+make_caption_from_blip2.py
+```
 
 キャプションを特徴量に変換する
-```make_text_features.py```
+```
+make_text_features.py
+```
 
 画像データベースを特徴量に変換する
-```prepare_corpus_blip.py or prepare_corpus_clip.py```
+```
+prepare_corpus_blip.py or prepare_corpus_clip.py
+```
 
 そしてCCIRディレクトリの以下のファイルを実行する
-```python eval.py```
+```
+python eval.py
+```
 
 ## 先行研究との比較
 先行研究との比較は以下のリポジトリを参考にそれぞれコードを実行する
