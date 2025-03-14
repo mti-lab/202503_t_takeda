@@ -1,0 +1,12 @@
+python-dotenv
+matplotlib
+openai
+pandas
+openpyxl
+optuna
+scikit-learn
+fairscale==0.4.4
+timm==0.4.12
+transformers==4.15.0
+git+https://github.com/openai/CLIP.git
+pycocoevalcap
