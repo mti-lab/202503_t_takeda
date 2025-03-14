@@ -1,7 +1,10 @@
 # CCIR: Chat-based Composed Image Retrieval
 
 ## 環境構築
+ライブラリをimportする
 ```pip install -r requirements.txt```
+
+.envファイルを作成、OPENAI_API_KEYを記入する
 
 ## データのダウンロード
 実験に使用する際のデータセットを以下のサイトからそれぞれダウンロードし、データディレクトリの.gitkeepがある箇所にダウンロードする
@@ -12,8 +15,10 @@
 
 データベースの画像のキャプションを作成する
 ```make_caption_from_blip2.py```
+
 キャプションを特徴量に変換する
 ```make_text_features.py```
+
 画像データベースを特徴量に変換する
 ```prepare_corpus_blip.py or prepare_corpus_clip.py```
 
@@ -22,4 +27,5 @@
 
 ## 先行研究との比較
 先行研究との比較は以下のリポジトリを参考にそれぞれコードを実行する
+
 [ChatIR](https://github.com/levymsn/ChatIR), [PlugIR](https://github.com/Saehyung-Lee/PlugIR), [Pic2Word](https://github.com/google-research/composed_image_retrieval), [MagicLens](https://github.com/google-deepmind/magiclens)
